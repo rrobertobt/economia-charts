@@ -1120,13 +1120,13 @@ export const stocksIdInfo = {
       {
         icon: FlFilledMoneyHand,
         title: "Inversión Final",
-        value: 87_633.0,
+        value: 121_905.0,
         class: "text-purple-500",
       },
       {
         icon: HeOutlineMoneyBag,
         title: "Rendimiento Final",
-        value: -38_676.0,
+        value: 121_905 - 126_309,
         class: "text-slate-100",
       },
     ],
