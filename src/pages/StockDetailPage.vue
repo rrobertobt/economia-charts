@@ -23,7 +23,7 @@
               'text-green-500': (item.value >= 0 && item.title === 'Rendimiento Final')
             }
             "
-            >{{ item.value.toLocaleString("es-GT",{ style: 'currency', currency: 'GTQ' }) }}
+            >{{ item.title !== 'Acciones Compradas' ? item.value.toLocaleString("en-GB",{ style: 'currency', currency: 'USD' }) : `${item.value} acciones` }}
             <FaArrowTrendUp v-if="item.title === 'Rendimiento Final' && item.value >= 0" class="size-7 text-green-500"/>
             <FaArrowTrendDown v-if="item.title === 'Rendimiento Final' && item.value < 0" class="size-7 text-red-500"/>
           </code>
