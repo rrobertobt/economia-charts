@@ -1,13 +1,10 @@
 <template>
-  <div>
-    <h1 class="text-3xl font-bold">
-      <span>Sobre nosotros</span>
-    </h1>
-    <ReTeamFill class="size-12 my-2 text-indigo-400" />
-    <h2 class="text-xl font-semibold mt-4">
-      <span class="my-2">Nuestro equipo:</span>
-    </h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
+  <div >
+    <header class="sticky top-0 px-8  md:py-12 md:px-20 z-10 bg-black/30 backdrop-blur-xl text-2xl font-semibold py-6">
+      <h1>Sobre nosotros</h1>
+      <h2 class="text-xl font-semibold mt-4">Nuestro equipo:</h2>
+    </header>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4 md:px-20 md:py-12 px-8 pt-2 pb-20">
       <div
         v-for="member in team"
         :key="member.ra"

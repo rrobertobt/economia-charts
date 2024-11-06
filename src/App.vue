@@ -1,5 +1,5 @@
 <template>
-  <main class="min-h-screen bg-black">
+  <main class=" bg-black">
     <aside
       class="fixed top-0 left-0 w-80 h-full backdrop-blur bg-zinc-950/85 overflow-y-auto z-40 transition-transform duration-300"
       :class="{
@@ -25,9 +25,9 @@
         </ul>
       </nav>
     </aside>
-    <div class="ml-0 md:ml-72 md:px-20 md:py-12 px-8 py-8">
+    <div class="ml-0 md:ml-80 h-screen overflow-auto">
       <label
-        class="inline-block md:hidden items-center cursor-pointer p-2.5 my-2 hover:bg-white/10 transition-colors rounded-lg"
+        class="inline-block md:hidden items-center cursor-pointer p-2.5 mx-4 mt-6 hover:bg-white/10 transition-colors rounded-lg"
       >
         <input type="checkbox" class="hidden" v-model="menuOpen" />
         <ChMenuHamburger />
@@ -97,12 +97,12 @@
 
   .fade-up-enter-active,
   .fade-up-leave-active {
-    transition: opacity 0.3s, transform 0.3s;
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
   }
 
   .fade-up-enter-from,
   .fade-up-leave-to {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(35px);
   }
 </style>
