@@ -6,11 +6,11 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,vue}",
   ],
-  darkMode: 'class',
   theme: {
     fontFamily: {
       sans: "Mona Sans, sans-serif",
-      mono: "DM Mono, ui-monospace",
+      // mono: "DM Mono, ui-monospace",
+      mono: "Hubot Sans, ui-monospace",
     },
     extend: {},
   },

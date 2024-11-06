@@ -41,7 +41,7 @@ export const indexData = {
     {
       icon: FlReceiptMoney,
       title: 'Rendimiento Total',
-      value: 14_800.61 + 19.50,
+      value:  49_072.61,
       class: 'text-slate-200',
     },
   ]

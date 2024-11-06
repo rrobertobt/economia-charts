@@ -1,7 +1,7 @@
 <template>
-  <div class="flex flex-col min-h-full">
+  <div class="flex flex-col min-h-full pb-20">
     <header
-      class="sticky top-0 z-10 bg-black/10 backdrop-blur-lg md:px-20 md:pt-10 px-8 pt-8 pb-4"
+      class="sticky top-0 z-10 bg-black/10 backdrop-blur-lg md:px-20 md:pt-6 px-8 pt-8 pb-2.5"
     >
       <h1 class="text-2xl font-bold">
         <component
@@ -12,7 +12,7 @@
         <span>{{ stockData.name }}</span> - <code>{{ stockData.code }}</code>
       </h1>
     </header>
-    <h5 class="md:px-20 px-8 pt-2.5 font-semibold text-xl text-neutral-300">
+    <h5 class="md:px-20 px-8 pt-2.5 font-black text-xl text-neutral-200">
       Detalles de la inversión
     </h5>
     <div
@@ -63,7 +63,7 @@
         </div>
       </div>
     </div>
-    <h5 class="md:px-20 px-8 py-2.5 font-semibold text-xl text-neutral-300">
+    <h5 class="md:px-20 px-8 py-2.5 font-black text-xl text-neutral-200">
       Gráfica
     </h5>
     <div class="md:px-20 px-8">
@@ -72,6 +72,12 @@
         class="rounded-lg overflow-hidden ring-2 ring-white/15"
       ></div>
     </div>
+    <h5 class="md:px-20 px-8 pb-3 pt-5 font-black text-xl text-neutral-200">
+      Justificación de compra
+    </h5>
+    <p class="md:px-20 px-8 text-lg leading-relaxed">
+      {{ stockData.description }}
+    </p>
   </div>
 </template>
 <script setup>
@@ -117,20 +123,6 @@
       wickUpColor: "#26a69a",
       wickDownColor: "#ef5350",
     });
-
-    // const data = [
-    //   { open: 10, low: 10, high: 9.55, close: 9.55, time: 1723627546 },
-    //   { open: 9.55, low: 9.55, high: 9.94, close: 9.94, time: 1724232346 },
-    //   { open: 9.45, low: 9.45, high: 10.94, close: 10.94, time: 1725441946 },
-    //   // { open: 9.94, high: 10.17, low: 9.92, close: 9.78, time: 1642600676 },
-    //   // { open: 9.78, high: 10.59, low: 9.18, close: 9.51, time: 1642687076 },
-    //   // { open: 9.51, high: 10.46, low: 9.1, close: 10.17, time: 1642773476 },
-    //   // { open: 10.17, high: 10.96, low: 10.16, close: 10.47, time: 1642859876 },
-    //   // { open: 10.47, high: 11.39, low: 10.4, close: 10.81, time: 1642946276 },
-    //   // { open: 10.81, high: 11.6, low: 10.3, close: 10.75, time: 1643032676 },
-    //   // { open: 10.75, high: 11.6, low: 10.49, close: 10.93, time: 1643119076 },
-    //   // { open: 10.93, high: 11.53, low: 10.76, close: 10.96, time: 1643205476 },
-    // ];
 
     if (stockData.history?.length) {
       candlestickSeries.setData(stockData.history);
