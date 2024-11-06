@@ -1,4 +1,4 @@
-import { CaMoney, FlReceiptMoney, HeOutlineMoneyBag, McPigMoneyLine } from "@kalimahapps/vue-icons";
+import { CaMoney, FlReceiptMoney, HeOutlineMoneyBag, LaDoorOpenSolid, McPigMoneyLine } from "@kalimahapps/vue-icons";
 import {
   AkDashboard,
   AkInfo,
@@ -155,5 +155,11 @@ export const menuItems = [
     path: "/about",
     icon: AkInfo,
     class: "!text-indigo-500 !bg-indigo-950",
+  },
+  {
+    name: "Acceso",
+    path: "/access",
+    icon: LaDoorOpenSolid,
+    class: "!text-teal-500 !bg-teal-950",
   },
 ];
