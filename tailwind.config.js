@@ -1,4 +1,4 @@
-const plugin = require("tailwindcss/plugin");
+//const plugin = require("tailwindcss/plugin");
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -14,7 +14,7 @@ export default {
     },
     extend: {},
   },
-  plugins: [
+  /*plugins: [
     plugin(({ addUtilities }) => {
       addUtilities({
         ".scrollbar-hide": {
@@ -29,5 +29,5 @@ export default {
         },
       });
     }),
-  ],
+  ],*/
 }
